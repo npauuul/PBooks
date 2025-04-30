@@ -45,7 +45,7 @@ CREATE TABLE IF NOT EXISTS `usuarios` (
   `is_admin` tinyint(1) DEFAULT 0,
   PRIMARY KEY (`id`),
   UNIQUE KEY `username` (`username`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=0 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 CREATE TABLE IF NOT EXISTS `libros` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -59,7 +59,7 @@ CREATE TABLE IF NOT EXISTS `libros` (
   PRIMARY KEY (`id`),
   KEY `FK_libros_usuarios` (`user_id`),
   CONSTRAINT `FK_libros_usuarios` FOREIGN KEY (`user_id`) REFERENCES `usuarios` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=0 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 ```
 
 ### 2. Variables de Entorno (.env)
