@@ -11,7 +11,7 @@ $libros = obtenerLibros();
 
 if (isset($_GET["error"])) {
     echo "<div class='alert alert-danger alert-dismissible fade show' role='alert'>
-  ¡No se ha encontrado el libro que buscas con el ID referente!
+  ¡No se ha encontrado el libro que buscas con el ID que buscas!
   <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button>
 </div>";
 }
